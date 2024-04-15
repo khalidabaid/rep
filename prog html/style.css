@@ -1,0 +1,20 @@
+/* Ajoutez du CSS pour le style de votre page ici */
+body {
+background-color: rgb(186, 186, 207);
+nav
+{
+    display: inline-block;
+    width:150px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+section
+{
+    display: inline-block;
+    border:1px solid blue;
+    
+    
+
+}
+}
+ 

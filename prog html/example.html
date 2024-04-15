@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form{
+       background-color: bisque; 
+       color: rgb(39, 42, 42);
+       font-size: large;
+    } 
+    #email{
+        background-color:aqua;
+    }
+    #telephone{
+        background-color: aqua;
+    }
+    #motdepasse{
+        background-color: aqua;
+    }
+    #numero{
+        background-color: aqua;
+    }
+    #date{
+        background-color: aqua;
+    }
+    #heure{
+        background-color: aqua;
+    }
+    #case{
+        background-color: aqua;
+    }
+    #url{
+        background-color: aqua;
+    }
+    #radio1{
+        background-color: aqua;
+    }
+    #radio2{
+        background-color: aqua;
+    }
+    #liste{
+        background-color: aqua;
+    }
+    #textarea{
+        background-color: aqua;
+    }
+    h1{
+        color: blue;
+        text-decoration:aqua;
+        display: block;
+        font-style: oblique;
+        text-align:center;
+        text-transform: lowercase;
+    }
+    body{
+        background-color: bisque;
+    
+    }
+    .kh{
+        position: absolute;
+        color: rgb(10, 6, 1);
+        border: 3px solid rgb(26, 16, 61);
+        font-size: small;
+        font-weight: 100px;
+        font-style:unset;
+    }
+
+
+    
+    </style>
+    <script>
+        fonction somme(let a,let b){
+            
+            alert('la somme est:'+a+b);
+        }
+        alert(somme (2,3));
+    
+    let nom="khalid"
+    let age="18 ans"
+    let verite="false"
+    alert("nom="+nom);
+    alert( "age="+age );
+    alert("verite="+verite);
+
+
+    let i
+    for(i=0;i<100;i++){
+        if(i%3===0&&i%5===0){ alert(i+ " fizzbuzz");}
+        if(i%3===0){ alert(i+ " fizz");}
+        if(i%5===0) {alert(i+ " buzz");}
+    }
+
+    </script>
+</head>
+<body>
+<div id="rr">
+    <h1>je m'appelle khalid</h1>
+    <h2 style="color: brown;">je m'appelle khalid</h2>
+    <h3 style="color: rosybrown;"> je m'appelle khalid</h3>
+    <h4 style="color: green;">je m'appelle khalid</h4>
+    <h5 style="color: blueviolet;">je m'appelle khalid</h5>
+    <h6 style="color: yellowgreen;">je m'appelle khalid</h6>
+</div>
+<ul>
+  <li> liste non ordonnee</li>
+  <li>khalid</li>
+  <li>khalid</li>
+</ul>
+        <ol>
+            <li>liste ordonnee</li>
+            <li>khalid</li>
+            <li>khalid</li>
+        </ol>
+<table>
+    <tr>
+        <th>nom</th>
+        <th>prenom </th>
+        <th>age</th>
+        <th>cin</th>
+    </tr>
+    <tr>
+        <td>khalid</td>
+        <td>abaid</td>
+        <td>18</td>
+        <td>n483718</td>
+    </tr>
+</table>
+
+    <label type="nom">nom:</label><br>
+    <input type="number" id="age" name="age"/></br>
+    <input type="button" id="nom" name="nom"/></br>
+    <input type="submit" value="envoyer" /></br>
+    <input type="checkbox" id="type" value="clique"/></br>
+    <button type="submit">clique</button></br>
+    type: <br>
+    <input type="radio" id="khalid"> femele</input>
+    <input type="radio" id="khalid"> mal</input>
+<span>span span</span></br>
+<header> en tete de section</header></br>
+<footer>pied de page</footer></br>
+<nav>navigation</nav></br>
+<section>section</section></br>
+<aside>contenu annexe (aside)</aside></br>
+<time datetime="28-04-2005">jeudi 28 avril 2005</time></br>
+<abbr title="hypertext markup language">html(abbr)</abbr></br>
+<code>code html</code></br>
+<blockquote>citation (blockquote)</blockquote></br>
+<strang>text important</strang></br>
+<del>text supprimer</del></br>
+<ins>text ajouter</ins></br>
+<fieldset>
+    <legend>legende(legende)</legend></br>
+</fieldset>
+<textarea rows="4" cols="50">zone de texte(textarea)</textarea>
+<input type="range" id="range" name="range"/>
+<source src="audio.mm" type="audio"/>
+<article>mon article</article>
+<i> je m'appelle khalid</i></br>
+  <form action="traitement_formulaire.php" method="post">
+     
+     <label for="motdepasse">mot de passe:</label>
+     <input type="password" id="motdepasse" name="motdepasse"><br>
+      
+     <label for="email">emeil:</label>
+     <input type="email"id="email" name="email"></br>
+
+     <label for="Numero">numero:</label>
+     <input type="number"id="numero" name="numero"></br>
+
+     <label for="telephone">telephone:</label>
+     <input type="tel"id="telephone" name="telephone"></br>
+     
+     <label for="date">date:</label>
+     <input type="date"id="date" name="date"></br>
+
+     <label for="heure">heure:</label>
+     <input type="time"id="heure" name="heure"></br>
+
+    <label for="url">URL</label>
+    <input type="url"id="url" name="url"></br>
+
+    <label for="case">case a cocher:</label>
+    <input type="color"id="case" name="case" ></br>
+
+    <label for="radio1">option1:</label>
+    <input type="radio"id="radio1" name="option1" value="1"></br>
+     
+    <label for="radio2">case a cocher:</label>
+    <input type="radio"id="radio2" name="option2" value="2"></br>
+
+    <label for="liste">salaire:</label>
+    <select id="liste" name="liste">
+        <option value="option1">3000-4000 dh</option>
+        <option value="option2">4000-5000 dh</option>
+        <option value="option3">5000-8000 dh</option>
+        <option value="option4">8000-10000 dh</option>
+    </select></br>
+      
+    <label for="liste">age:</label>
+    <select id="liste" name="liste">
+        <optgroup> 
+          <option value="option1">16-20 ans</option>
+          <option value="option2">20-24 ans</option>
+          <option value="option3">24-30 ans</option>
+          <option value="option4">30-34 ans</option>
+        </optgroup>
+    </select></br>
+     
+    <label for="textarea">bienvenu chez nous</label>
+    <textarea id="textarea" name="textarea"></textarea></br>
+
+</form>
+<h3 class="kh">je suis un etudiant</h3>
+</body>
+</html>

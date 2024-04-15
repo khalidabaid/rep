@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="clock">
+        <div class="heure"></div>
+        <div class="minute"></div>
+        <div class="seconde"></div>
+    </div>
+    <style>
+.clock {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(138, 24, 110);
+
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.clock div {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: black;
+    transform-origin: 100%;
+
+}
+
+.heure {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+
+                   
+}
+
+.minute {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.seconde {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(290deg);
+}
+
+    </style>
+    <script>
+  function time()
+        {
+            
+        let  h = new Date();
+        let heure = document.querySelector(".heure");
+        heure.textContent=h.getHours();
+
+        let minute =  document.querySelector(".minute");
+        minute.textContent=h.getMinutes();
+
+        let seconde =  document.querySelector(".seconde");
+        sec.textContent=h.getSeconds();
+        }
+
+        setInterval(time,1000);
+    
+    </script>
+    
+          
+</body>
+</html>
